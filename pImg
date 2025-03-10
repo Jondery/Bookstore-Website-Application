@@ -1,0 +1,29 @@
+import React from 'react'
+// IMPORTING BOOKS
+import Fic1 from '../assets/images/Books_images/Fic1.jpg'
+import Fic2 from '../assets/images/Books_images/Fic2.webp'
+import Fic3 from '../assets/images/Books_images/Fic3.jpg'
+import ChildBook from './ChildBook'
+// IMPORTING SWIPER
+
+const ParentBook = () => {
+    // adding books
+    const books = [
+        //adding cart button
+        {title: "Secrets Beneath Waves", bookType: "Fiction", Image: Fic1},
+        { title: "Whispers in darkness", bookType: "Fiction", Image: Fic3 },
+        { title: "Mystery of Shadows", bookType: "Comics", Image: Fic2 },
+        { title: "Dreams of Eternity", bookType: "Non-Fiction", Image: Fic1 }
+
+    ]
+
+    return (
+                <div className='flex justify-center gap-x-10 !pt-40'>
+            {books.map((book, index) => (
+                <ChildBook key={index} bookTitle={book.title} bookType={book.bookType} bookImg={book.Image}></ChildBook>
+            ))}
+        </div>
+    )
+}
+
+export default ParentBook

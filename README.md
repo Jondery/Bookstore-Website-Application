@@ -1,2 +1,8 @@
-# Bookstore-Website-Application
-A bookstore web application is an online platform that enables users to browse, search, and purchase books. It typically features a user-friendly interface with a homepage showcasing categories like new arrivals, bestsellers, and featured books. Users can search for books by title, author, or genre and view detailed information such as descriptions, prices, and ratings. The app also includes a shopping cart for easy checkout, user authentication for order tracking, and payment integration for seamless transactions. Additionally, bookstore web apps may offer features like book recommendations, reviews, and user profiles to enhance the overall shopping experience.
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

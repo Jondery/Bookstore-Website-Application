@@ -1,0 +1,31 @@
+import React from "react";
+import { FaShoppingCart } from "react-icons/fa";
+
+const ChildBook = ({ bookImg, bookTitle, bookType }) => {
+  return (
+    <div className=''>
+      <div className="h-65 w-55 bg-gray-200 rounded-xl ">
+        <img src={bookImg} className="hover:cursor-pointer mx-auto h-60 w-45 !m-4 !pt-4 rounded" />
+
+        <div className="h-30 w-55 rounded !pt-4 hover:cursor-pointer transition-all duration-200">
+          {/* adding cart button here */}
+          <div className="flex justify-between">
+            <h1 className="text-gray-800 font-bold">{bookTitle}</h1>
+            <button className="bg-gray-800 h-5 w-6 rounded flex justify-center items-center !mt-1 hover:cursor-pointer">
+              <FaShoppingCart className="text-white" />
+            </button>
+          </div>
+
+          <div className="flex justify-between !mt-1">
+            <p className="text-gray-700 font-semibold text-sm">{bookType}</p>
+            {/* adding payment here button here */}
+            <p className="text-gray-700 font-semibold text-sm">$15.00</p>
+          </div>
+          <p className="text-black text-xs !mt-4">Lorem ipsum dolor sit, amet laborum  consectetur adipisicing elit Natus. </p>
+        </div>
+      </div>
+    </div >
+  );
+};
+
+export default ChildBook;
